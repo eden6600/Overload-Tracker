@@ -1,0 +1,9 @@
+body {
+  background-image: url("images/background.jpg");
+  color: red;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}

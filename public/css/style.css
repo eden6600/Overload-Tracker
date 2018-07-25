@@ -1,0 +1,13 @@
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.collection-header span {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.collection-header h5 {
+  display: inline;
+}

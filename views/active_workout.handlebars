@@ -1,0 +1,72 @@
+<div class="row animated zoomIn">
+  <div class="col s12 l6 offset-l3">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Pull Workout - 15/07/2018</span>
+        <div class="divider"></div>
+
+        <!-- Input Section -->
+        <div class="section">
+          <div class="row">
+            <div class="input-field col s12 m3">
+              <select id="category-input">
+                <option value="" disabled selected>Category</option>
+                  <option value="Chest">Chest</option>
+                  <option value="Back">Back</option>
+                  <option value="Legs">Legs</option>
+                  <option value="Biceps">Biceps</option>
+              </select>
+            </div>
+            <div class="input-field col s12 m3">
+              <select id="name-input">
+                <option value="" disabled selected>Exercise</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                  <option value="4">Option 4</option>
+              </select>
+            </div>
+            <div class="input-field col s12 m3">
+              <input id="weight-input" type="number" placeholder="Weight" id="weight-input">
+            </div>
+            <div class="input-field col s12 m3">
+              <input id="reps-input" type="number" placeholder="Reps" id="reps-input">
+            </div>
+            <div class="col s12">
+              <button id="add-set-btn" class="btn btn-block blue">Add Set</buttn>
+            </div>
+          </div>
+        </div>
+
+        <!-- Active Exercise Section -->
+        <div class="section active-exercise-section hide">
+          <div class="row">
+            <div class="col s12">
+              <ul id="active-exercise" class="collection with-header">
+              </ul>
+              <button id="save-exercise-btn" class="btn btn-block green">Save Exercise</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Workout Summary Section -->
+<div class="row">
+  <div class="col s12 l6 offset-l3">
+    <h5>Workout Summary</h5>
+    <ul class="collapsible" data-collapsible="accordion">
+      {{> _muscle muscleName='Chest'}} {{> _muscle muscleName='Triceps'}} {{> _muscle muscleName='Biceps'}} {{> _muscle muscleName='Back'}}
+      {{> _muscle muscleName='Shoulders'}} {{> _muscle muscleName='Legs'}}
+    </ul>
+    </div>  
+      <div class="col s12 l6 offset-l3">
+      
+
+          <button id="save-workout-btn" class="btn waves-effect waves-light btn-block green">Save Workout</button>
+        
+      </div>
+  </div>
+</div>
